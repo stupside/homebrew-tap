@@ -13,22 +13,22 @@ cask "moley" do
   on_macos do
     on_intel do
       url "https://github.com/stupside/moley/releases/download/v1.3.0/moley_1.3.0_darwin_amd64.tar.gz"
-      sha256 "46f7983d5bd83011a6111c12a541998e74e2ec665387b3389f6a717fc82ab06d"
+      sha256 "a8c18ea84c092a4dd73f51568476a9f7a38a6e192b918b9ebf8f444b6f43ef53"
     end
     on_arm do
       url "https://github.com/stupside/moley/releases/download/v1.3.0/moley_1.3.0_darwin_arm64.tar.gz"
-      sha256 "923d432c89e18a2f5edf4c87a1243cc1a48c66947cf35b881ae4b10927e77172"
+      sha256 "66e87b67b113e53d65311736a7d9ce07175135df482006f3f1e41b95a9ba844f"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/stupside/moley/releases/download/v1.3.0/moley_1.3.0_linux_amd64.tar.gz"
-      sha256 "2ffe5c7552f165730282252b20f2530e0c6e64d6071a9cbeca0bf50872476f0a"
+      sha256 "05967312b61e6e195440c676e679e7755175d4fc9befa36495a77da5e362328e"
     end
     on_arm do
       url "https://github.com/stupside/moley/releases/download/v1.3.0/moley_1.3.0_linux_arm64.tar.gz"
-      sha256 "8e31fbb5b5574668da6a3fecfaebad95b792a0dd56d0bc9ef362686364f14983"
+      sha256 "ff0ad85bae86ec726e733953f145ef4e7912be8435eba07ba2e65eeff9493a6a"
     end
   end
 
