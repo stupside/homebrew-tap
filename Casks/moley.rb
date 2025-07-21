@@ -2,7 +2,7 @@
 cask "moley" do
   desc "Expose your local apps to the world—securely, instantly, and with zero hassle."
   homepage ""
-  version "1.2.0"
+  version "1.3.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "moley" do
 
   on_macos do
     on_intel do
-      url "https://github.com/stupside/moley/releases/download/v1.2.0/moley_1.2.0_darwin_amd64.tar.gz"
-      sha256 "b13ac69ef6ddf2337e374a55602b94ae98b6c41592f48fa2384163a9702e5a39"
+      url "https://github.com/stupside/moley/releases/download/v1.3.0/moley_1.3.0_darwin_amd64.tar.gz"
+      sha256 "46f7983d5bd83011a6111c12a541998e74e2ec665387b3389f6a717fc82ab06d"
     end
     on_arm do
-      url "https://github.com/stupside/moley/releases/download/v1.2.0/moley_1.2.0_darwin_arm64.tar.gz"
-      sha256 "fed1f4b062c753cf56b57914052aa556c080e09229c25cb5a4587e73eb07e858"
+      url "https://github.com/stupside/moley/releases/download/v1.3.0/moley_1.3.0_darwin_arm64.tar.gz"
+      sha256 "923d432c89e18a2f5edf4c87a1243cc1a48c66947cf35b881ae4b10927e77172"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/stupside/moley/releases/download/v1.2.0/moley_1.2.0_linux_amd64.tar.gz"
-      sha256 "b6333ffcf2cc7183d1834c143b667626161a0c6161fd8ce329a3d0f04bfaac1f"
+      url "https://github.com/stupside/moley/releases/download/v1.3.0/moley_1.3.0_linux_amd64.tar.gz"
+      sha256 "2ffe5c7552f165730282252b20f2530e0c6e64d6071a9cbeca0bf50872476f0a"
     end
     on_arm do
-      url "https://github.com/stupside/moley/releases/download/v1.2.0/moley_1.2.0_linux_arm64.tar.gz"
-      sha256 "ca2c554ef080343ca7d27110a9e504e712dcd1bf2147f87efa4170aabc77c623"
+      url "https://github.com/stupside/moley/releases/download/v1.3.0/moley_1.3.0_linux_arm64.tar.gz"
+      sha256 "8e31fbb5b5574668da6a3fecfaebad95b792a0dd56d0bc9ef362686364f14983"
     end
   end
 
