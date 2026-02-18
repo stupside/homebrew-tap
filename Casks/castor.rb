@@ -3,7 +3,7 @@ cask "castor" do
   name "castor"
   desc "Cast video streams to networked devices"
   homepage ""
-  version "0.0.2"
+  version "0.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "castor" do
   on_macos do
     on_intel do
       url "https://github.com/stupside/castor/releases/download/v#{version}/castor_#{version}_darwin_amd64.tar.gz"
-      sha256 "f908918a9bab3c88ba437c006b49cdf007c4608c71df71f058f23e7fa0b64c06"
+      sha256 "36a8aba4fce7c20b39de3268674e97ce28a9d1cc7807af2f5c5f3dd9095823d4"
     end
     on_arm do
       url "https://github.com/stupside/castor/releases/download/v#{version}/castor_#{version}_darwin_arm64.tar.gz"
-      sha256 "0f10e83765be85b1dcf555b1488341bbd15e1b43ca4d2fe54eb5af748c8a3ada"
+      sha256 "7d01235902903e746bddd5d718128224fbbefbfb185966bb22ac86ceea82c970"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/stupside/castor/releases/download/v#{version}/castor_#{version}_linux_amd64.tar.gz"
-      sha256 "3ac6b047ce3776f821b7473b0ff7aa90d9227e2bc8cdc3992e29333b8b238ecb"
+      sha256 "c51033009e11b140126657d18b57e3009fde6bf0854ddf3756da471643526555"
     end
     on_arm do
       url "https://github.com/stupside/castor/releases/download/v#{version}/castor_#{version}_linux_arm64.tar.gz"
-      sha256 "d744345c691c84629cbd71bd7cd8e4d28fb0b1479c73d2bf4e623e6c9b50c80a"
+      sha256 "903ff5de7101e44c47639fbdd330e909bb45f40a9b392adb4b3915aa842c7e26"
     end
   end
 
