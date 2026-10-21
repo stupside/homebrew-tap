@@ -1,9 +1,9 @@
 cask "castor" do
   arch arm: "arm64", intel: "amd64"
 
-  version "v1.9.0"
-  sha256 arm:   "13e1685fff7e36798701c336d0bf50e5e2bfd7660f5b2e5f893e667e3ae4cd69",
-         intel: "90cd764c9909e8c9000459aeef6205b0791147e9f95a7c402845d7721e35871b"
+  version "v2.0.0"
+  sha256 arm:   "44f0d07041440561a165fbbe130d362b19a539116a62b80529e877527d46b582",
+         intel: "e020e2ae7aeaff344a92820ec899540e270ee178eb1a4bd5d7419cfa09b3ef90"
 
   url "https://github.com/stupside/castor/releases/download/#{version}/castor_#{version}_darwin_#{arch}.tar.gz"
   name "castor"
@@ -12,11 +12,8 @@ cask "castor" do
 
   binary "castor"
 
-  # The binary is unsigned, so macOS Gatekeeper quarantines it on download and
-  # refuses to run it. Strip the quarantine attribute so it works out of the box.
-  postflight_steps do
-    run "/usr/bin/xattr", args: ["-cr", "{{staged_path}}/castor"]
+  # Unsigned, so Gatekeeper would quarantine it.
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-cr", "#{staged_path}/castor"]
   end
-
-  zap trash: "~/.castor/config.yml"
 end
