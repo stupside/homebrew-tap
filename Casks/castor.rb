@@ -1,9 +1,9 @@
 cask "castor" do
   arch arm: "arm64", intel: "amd64"
 
-  version "v2.3.0"
-  sha256 arm:   "5cb9e46cf2350a919e5aae9f57b712c1e7c0d1791600880611edd113f0c742a4",
-         intel: "f65bc09dcdad28f8feb84f884ecc6ee7dc727c46d6fbcfe7f42ac9d8aa74ed53"
+  version "v2.4.0"
+  sha256 arm:   "9a6eb84c950ab906152019b5578b93ac6d2b7162381e80cc570acc17dd45b81b",
+         intel: "4a624762a36242c77f1f08d08f8323c27b62d22504235ac58a702166682094aa"
 
   url "https://github.com/stupside/castor/releases/download/#{version}/castor_#{version}_darwin_#{arch}.tar.gz"
   name "castor"
